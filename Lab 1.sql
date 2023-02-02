@@ -86,7 +86,6 @@ from northwind.products
 -- ------------------------------------------------------------------ 
 -- 9). Count of Current and Discontinued Products 
 -- ------------------------------------------------------------------
-update northwind.products set discontinued = 1 where id = 95;
 
 select case discontinued 
 		when 1 then "yes"
@@ -96,7 +95,6 @@ select case discontinued
 from northwind.products
 group by discontinued;
 
-update northwind.products set discontinued = 0 where id = 95;
 
 -- ------------------------------------------------------------------
 -- 10). Product Name, Units on Order and Units in Stock
